@@ -1,0 +1,164 @@
+/* *********************************Case Studies******************** */
+.cont_studies{
+    background-color: rgb(233, 233, 233);
+    width:100%;
+    margin:10px auto
+}
+.cont_studies h1{
+    /* background-color: brown; */
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0;
+}
+.cont_studies>p{
+    /* background-color: burlywood; */
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 20px;
+}
+.cont_pricing{
+    /* background-color: cadetblue; */
+    width:90%;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.precio{
+    /* background-color: cornsilk; */
+    text-align: center;
+    margin:20px auto
+}
+.p_n{
+    font-size: 70px;
+}
+.basic,.team,.enterprice{
+    width:25%;
+    /* border:solid black 1px; */
+    box-shadow: 0 0 8px 1px black;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: white;
+}
+.basic p,.team p,.enterprice p{
+text-align: center;
+/* background-color: chocolate; */
+margin: 10px auto;
+padding: 5px 0;
+font-size: 20px;
+}
+.basic h3,.team h3,.enterprice h3{
+    text-align: center;
+    /* background-color: chartreuse; */
+}
+.cont_pricing button{
+    background-color: rgb(161, 161, 233);
+    width:150px;
+    height:40px;
+    border-radius: 10px;
+    border:none;
+    margin: 20px auto;
+}
+/* **************************Download to Get Started******************** */
+.cont_getStarted{
+    border:solid black 1px;
+    background-color:blueviolet;
+    width:100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont_getStarted h2{
+    /* background-color: darkblue; */
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+    width:100%
+}
+.cont_getStarted p{
+    width:70%;
+    /* border:solid black 1px; */
+    margin:10px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+.cont_getStarted button{
+    width:150px;
+    height:40px;
+    /* background-color:rgb(182, 119, 240); */
+    border-radius: 10px;
+    border:solid white 2px;
+    font-size: 10px;
+    font-weight: bold;
+}
+/* **************************Asked Questions*************************** */
+.cont_questions{
+    /* border:solid black 1px; */
+    margin:20px auto;
+    padding:20px 10px;
+}
+.cont_questions h3{
+    /* background-color: brown; */
+    text-align: center;
+    font-size: 25px;
+    padding:20px
+}
+.cont_questions>p{
+    width:70%;
+    /* border:solid black 1px; */
+    margin:10px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+.sub_questions{
+    /* border:solid black 1px; */
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.questions{
+    width: 45%;
+    /* border:solid black 1px; */
+    /* margin: 20px auto; */
+    padding: 20px 0;
+}
+.questions h4{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.questions p{
+    font-size: 18px;
+}
+/* ****************************Medias Query******************* */
+@media(max-width:768px){
+    .cont_studies>p{
+        width:100%
+    }
+    .cont_pricing{
+        width:100%
+    }
+    .basic,.team,.enterprice{
+        width:60%;
+        margin:10px auto
+    }
+    .cont_getStarted p{
+        width:90%
+    }
+    .cont_questions p{
+        width: 100%;
+    }
+    .sub_questions{
+        width:100%
+    }
+}
+@media(max-width:576px){
+    .questions{
+        width:90%
+    }
+    .basic,.team,.enterprice{
+        width:90%;
+    }
+}

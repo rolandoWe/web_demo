@@ -1,23 +1,47 @@
-// *************************Menu de Navegación**********************
-document.addEventListener("scroll",function(){
-scrol()
+// EFECTO SCROLL DEL MENU DE NAVEGACION
+window.addEventListener("scroll",function(){
+    scroll()
 })
-let scrollTop=window.pageYOffset;
-function scrol(){
-    let scrollAct=window.pageYOffset;
-    if(scrollTop<scrollAct){
-        // document.querySelector(".main").style.top="-200px";
-        document.querySelector(".main").style.height="0px";
-        document.querySelector(".main").style.overflow="hidden";
-        document.querySelector(".main").style.padding="0px";
+let positionTop=window.pageYOffset;
 
+function scroll(){
+    let positionActual=window.pageYOffset;
 
+    if(positionTop>positionActual){
+        document.querySelector(".main").style.top="0";
     }else{
-        // document.querySelector(".main").style.top="0px";
-        document.querySelector(".main").style.height="100px";
-        // document.querySelector(".main").style.overflow="visible";
-
-
+        document.querySelector(".main").style.top="-200px";
     }
-    scrollTop=scrollAct
+    positionTop=positionActual
 }
+
+// MOSTRAR OCULTAR MENU UL
+
+let menu=document.querySelector(".menu");
+let cerrar=document.querySelector(".close");
+let ul=document.querySelector(".ul");
+let cx=document.querySelector(".cx");
+
+menu.addEventListener("click",function(){
+    ul.classList.toggle("mostrar_ul");
+    menu.style.display="none"
+});
+cerrar.addEventListener("click",function(){
+    ul.classList.toggle("mostrar_ul");
+    menu.style.display="block"
+})
+
+ul.addEventListener("click",function(u){
+
+    cerr(u.target)
+
+})
+function cerr(c){
+    if(c.className=="cx"){
+        ul.classList.toggle("mostrar_ul");
+        menu.style.display="block"
+    }
+}
+
+
+
